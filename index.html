@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title goes here</title>
+     <title>DOM Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+    /*
+    div#play span{
+      background-color: yellow;
+    }
+     */
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title goes here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+     <h1>DOM Play</h1>
      </header>
      
    <main class="wrapper">
-     <p>content goes here</p>
+    <div id="play">
+      <p>This webpage uses JavaScript data attributes and a node list to highlight actors in a play by 
+        clicking on the name of the actor</p><br>
+     <p><span data-actor="lucy">Lucy: This bed's too big</span></p>
+     <p><span data-actor="narrator">Narrator: Peter ruffles her hair</span></p>
+     <p><span data-actor="peter">Peter: You sure you havn't shrunk?</span></p>
+     <p><span data-actor="narrator">Narrator: Lucy smiles despite herself.
+        In the next bed Susan tucks herself in.</span></p>
+     <p><span data-actor="susan">Susan: The professor's just not used to having kids around</span></p>
+     <p><span data-actor="narrator">Narrator: Lucy hugs her pillow</span></p>
+     <p><span data-actor="lucy">Lucy: I still miss mum.</span></p>
+     <p><span data-actor="narrator">Narrator: Edmund enters carrying a plate.</span></p>
+     <p><span data-actor="edmund">Edmund: Well if you're homesick, go stand outside the Macready's door. 
+      she snores like an air raid siren.</span></p>
+      <p><span data-actor="lucy">Lucy: Lucy giggles as Edmund puts down a plate of biscuits.</span></p>
+      <p><span data-actor="edmund">Edmund: That pantry's a gold mine</span></p>
+      <p><span data-actor="susan">Susan: You should be in bed</span></p>
+      <p><span data-actor="edmund">Edmund: Stop trying to sound like mum. Go to bed youself.</span></p>
+      <p><span data-actor="susan">Susan: I am in bed</span></p>
+      <p><span data-actor="narrator">Narrator: Defeated, Edmund scowls at her Peter take a biscuit
+      and gives it to Lucy</span></p>
+      <p><span data-actor="peter">Peter: Tell you what. Tomorrow, we'll go outside and explore. 
+        You saw the grounds. Theres no telling what we'll find.
+      </span></p>
+
+    </div>
       <footer>
       <p><small>&copy; 2021 by 
           Wendy Salinas, All Rights Reserved ~ 
@@ -29,5 +56,6 @@
     </footer>
   </main>
  <script src="js/main.js"></script>
+ <script src="dom-play.js"></script>
  </body>
 </html>
